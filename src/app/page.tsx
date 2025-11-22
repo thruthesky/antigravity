@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -8,7 +6,6 @@ import { auth } from '@/lib/firebase';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
->>>>>>> origin/firebase
 export default function Home() {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
@@ -41,13 +38,6 @@ export default function Home() {
   }
 
   return (
-<<<<<<< HEAD
-    <div className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-black">
-      <h1 className="text-6xl font-bold tracking-tighter">
-        <span className="text-red-500">헬로</span>{" "}
-        <span className="text-blue-500">월드</span>
-      </h1>
-=======
     <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black p-8">
       <main className="w-full max-w-md bg-white dark:bg-zinc-900 p-8 rounded-lg shadow-lg text-center">
         <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Firebase Auth Demo</h1>
@@ -81,7 +71,6 @@ export default function Home() {
           </div>
         )}
       </main>
->>>>>>> origin/firebase
     </div>
   );
 }
